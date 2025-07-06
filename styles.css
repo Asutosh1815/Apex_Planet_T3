@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.box {
+  flex: 1 1 200px;
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .box {
+    background-color: lightgreen;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+  .box {
+    background-color: lightcoral;
+    font-size: 12px;
+  }
+}
